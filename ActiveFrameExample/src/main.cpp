@@ -22,8 +22,8 @@ int main(int argc, char **argv)
         app.installTranslator( &translator );
     }
 
-    // Create the cover now. When application in moved to background it's too late
-    // to create some resource or send asynch. requests. Remember ActiveFrame is refreshed every 30sec.
+    // Create the cover now. When application in moved to a background it's too late
+    // to create some UI controls or send asynch. requests. Remember ActiveFrame is refreshed every 30sec.
     // Using DataModel in ActiveFrame isn't good idea too.
     // Provider creates the CustomControls once they are needed.
     app.setCover(new ActiveFrame());
